@@ -1,6 +1,5 @@
 import {
   FormControl,
-  FormDescription,
   FormItem,
   FormLabel,
   FormMessage,
@@ -30,9 +29,14 @@ const FormField = ({
       <FormItem>
         <FormLabel className="label">{label}</FormLabel>
         <FormControl>
-          <Input className="input" type={type} placeholder={placeholder} {...field} />
+          <Input
+            className="input"
+            type={type}
+            placeholder={placeholder}
+            {...field}
+          />
         </FormControl>
-        
+
         <FormMessage />
       </FormItem>
     )}
