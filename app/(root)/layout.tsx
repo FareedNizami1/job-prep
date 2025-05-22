@@ -11,11 +11,11 @@ const Layout = async ({ children }: { children: ReactNode }) => {
   }
 
   return (
-    <div>
-      <nav className="root-layout">
+    <div className="root-layout">
+      <nav>
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.svg" alt="logo" height={32} width={38} />
-          <h2 className="text-primary-100" >JobPrep</h2>
+          <h2 className="text-primary-100">JobPrep</h2>
         </Link>
       </nav>
       {children}
